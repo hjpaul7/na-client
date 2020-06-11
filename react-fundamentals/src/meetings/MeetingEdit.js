@@ -10,6 +10,7 @@ import {
   ModalHeader,
   ModalBody,
 } from "reactstrap";
+import APIURL from "../helpers/environment";
 
 const MeetingEdit = (props) => {
   const [editName, setEditName] = useState(props.meetingToUpdate.name);
@@ -24,7 +25,7 @@ const MeetingEdit = (props) => {
 
   const meetingUpdate = (event, meeting) => {
     event.preventDefault();
-    fetch(`http://localhost:4000/meeting/${props.meetingToUpdate.id}`, {
+    fetch(`${APIURL}/meeting/${props.meetingToUpdate.id}`, {
       method: "PUT",
       body: JSON.stringify({
         name: editName,

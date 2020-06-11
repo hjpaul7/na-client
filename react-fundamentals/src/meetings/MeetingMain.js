@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import MeetingTable from "./MeetingTable";
 import MeetingCreate from "./MeetingCreate";
 import MeetingEdit from "./MeetingEdit";
+import APIURL from "../helpers/environment";
 
 const MeetingMain = (props) => {
   const [meetings, setMeetings] = useState([]);
@@ -10,7 +11,7 @@ const MeetingMain = (props) => {
   const [meetingToUpdate, setMeetingToUpdate] = useState({});
 
   const fetchMeetings = () => {
-    fetch("http://localhost:4000/meeting", {
+    fetch(`${APIURL}/meeting`, {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",

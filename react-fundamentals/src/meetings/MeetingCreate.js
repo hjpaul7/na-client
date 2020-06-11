@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import APIURL from "../helpers/environment";
 
 const MeetingCreate = (props) => {
   const [name, setName] = useState("");
@@ -10,7 +11,7 @@ const MeetingCreate = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:4000/meeting/", {
+    fetch(`${APIURL}/meeting/`, {
       method: "POST",
       body: JSON.stringify({
         name: name,

@@ -25,6 +25,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 import Signup from "./Signup";
 import Login from "./Login";
 import "./Auth.css";
+import APIURL from "../helpers/environment";
 
 const Auth = (props) => {
   const [username, setUsername] = useState("");
