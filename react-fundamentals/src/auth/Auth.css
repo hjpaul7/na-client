@@ -1,0 +1,20 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcoral;
+}
+
+/* .authForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcoral;
+} */
+
+.logo {
+  padding-left: 100px;
+  font-family: "Ubuntu", sans-serif;
+}

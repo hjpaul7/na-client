@@ -8,6 +8,8 @@ import {
   NavItem,
   Button,
 } from "reactstrap";
+import { Route, Link, Switch } from "react";
+import Test from "../components/test";
 
 const Sitebar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +26,11 @@ const Sitebar = (props) => {
         <Nav className="ml-auto" navbar>
           <NavItem>
             <button
-              type="button"
-              class="btn btn-light"
+              className="btn btn-primary"
+              type="submit"
               onClick={props.clickLogout}
             >
-              Sign Out
+              Logout
             </button>
           </NavItem>
         </Nav>

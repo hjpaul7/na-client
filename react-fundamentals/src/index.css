@@ -6,8 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white !important;
-  background-color: #1c5253 !important;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png") !important;
+  background-color: lightcoral !important;
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png") !important; */
 }
 
 code {
@@ -24,9 +24,14 @@ button {
   margin-bottom: 10px !important;
 }
 
-.searchBar {
-  border-radius: 5px !important;
-  border-style: none !important;
-  width: 500px;
-  height: 40px;
+.navbar {
+  overflow: hidden;
+  background-color: #2d2d2d;
+  height: 60px;
+  width: 100%;
+  margin-top: 0px;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  margin-bottom: 40px;
 }

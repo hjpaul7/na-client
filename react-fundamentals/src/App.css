@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -35,14 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
-.navbar {
-  overflow: hidden !important; /* hides overflow */
-  background-color: #2d2d2d !important;
-  height: 60px !important;
-  width: 100% !important;
-  margin-top: 0px !important;
-  position: fixed !important;
-  z-index: 2 !important;
-  top: 0px !important;
 }

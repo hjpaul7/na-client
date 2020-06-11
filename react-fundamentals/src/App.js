@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Sitebar from "./home/Navbar";
-import Header from "./components/site/Header";
-import Sidebar from "./components/site/Sidebar";
-import { BrowserRouter as Router } from "react-router-dom";
 import Auth from "./auth/Auth";
 import MeetingMain from "./meetings/MeetingMain";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   const [sessionToken, setSessionToken] = useState("");
@@ -38,19 +36,16 @@ function App() {
 
   return (
     <div>
-      <Header />
       <Router>
-        <Sidebar updateToken={updateToken} />
+        <Sitebar clickLogout={clearToken} />
       </Router>
+      {/* Views (switch)
+          if authed, main web routes
+        
+        */}
+      {protectedViews()}
     </div>
   );
-  // return (
-  //   <div>
-  //     <Sidebar clickLogout={clearToken} />
-  //     {/* <Auth updateToken={updateToken} /> */}
-  //     {protectedViews()}
-  //   </div>
-  // );
 }
 
 export default App;
