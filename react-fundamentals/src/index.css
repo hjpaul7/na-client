@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: white !important;
   background: linear-gradient(to bottom, coral, lightcoral);
+  /* background: linear-gradient(to bottom, #485668, #282d42); */
+  /* background-color: #1f2833 !important; */
+  /* background-color: #0b0c10 !important; */
   /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png") !important; */
 }
 
