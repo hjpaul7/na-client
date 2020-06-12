@@ -18,7 +18,7 @@ const Signup = (props) => {
     event.preventDefault();
     fetch(`${APIURL}/user/register`, {
       method: "POST",
-      body: JSON.stringify({ username, password: password }),
+      body: JSON.stringify({ username: username, password: password }),
       headers: new Headers({
         "Content-Type": "application/json",
       }),

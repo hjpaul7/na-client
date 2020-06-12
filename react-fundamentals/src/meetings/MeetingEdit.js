@@ -28,6 +28,7 @@ const MeetingEdit = (props) => {
   };
 
   const meetingUpdate = (event, meeting) => {
+    console.log(props);
     event.preventDefault();
     fetch(`${APIURL}/meeting/${props.meetingToUpdate.id}`, {
       method: "PUT",
@@ -38,7 +39,7 @@ const MeetingEdit = (props) => {
         time: editTime,
         openclosed: editOpenClosed,
       }),
-      header: new Headers({
+      headers: new Headers({
         "Content-Type": "application/json",
         Authorization: props.token,
       }),
