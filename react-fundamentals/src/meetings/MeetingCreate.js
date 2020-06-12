@@ -57,15 +57,21 @@ const MeetingCreate = (props) => {
 
   return (
     <Container>
-      <h3 style={{ textAlign: "center" }}>
-        <font color="#e33e42">A</font>dd <font color="#e33e42">M</font>eeting
+      <h3
+        style={{
+          textAlign: "center",
+          letterSpacing: "1px",
+          marginTop: "125px",
+        }}
+      >
+        Add Meeting
       </h3>
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col md="6">
             <FormGroup>
               <Label htmlFor="name" />
-              <h5>
+              <h5 style={{ letterSpacing: "1px" }}>
                 <font color="#e33e42">N</font>ame
               </h5>
               <Input
@@ -78,7 +84,7 @@ const MeetingCreate = (props) => {
           <Col md="6">
             <FormGroup>
               <Label htmlFor="location" />
-              <h5>
+              <h5 style={{ letterSpacing: "1px" }}>
                 <font color="#e33e42">L</font>ocation
               </h5>
               <Input
@@ -91,7 +97,7 @@ const MeetingCreate = (props) => {
           <Col md="4">
             <FormGroup>
               <Label htmlFor="day" />
-              <h5>
+              <h5 style={{ letterSpacing: "1px" }}>
                 <font color="#e33e42">D</font>ay
               </h5>
               <Input
@@ -105,7 +111,7 @@ const MeetingCreate = (props) => {
           <Col md="4">
             <FormGroup>
               <Label htmlFor="time" />
-              <h5>
+              <h5 style={{ letterSpacing: "1px" }}>
                 <font color="#e33e42">T</font>ime
               </h5>
               <Input
@@ -118,7 +124,7 @@ const MeetingCreate = (props) => {
           <Col md="4">
             <FormGroup>
               <Label htmlFor="openclosed" />
-              <h5>
+              <h5 style={{ letterSpacing: "1px" }}>
                 <font color="#e33e42">O</font>pen or{" "}
                 <font color="#e33e42">C</font>
                 losed

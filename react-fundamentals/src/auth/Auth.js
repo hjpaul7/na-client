@@ -24,6 +24,7 @@ import React, { useState } from "react";
 import Signup from "./Signup";
 import Login from "./Login";
 import "./Auth.css";
+import { Badge } from "reactstrap";
 
 const Auth = (props) => {
   const [username, setUsername] = useState("");
@@ -33,6 +34,7 @@ const Auth = (props) => {
   const logoStyle = {
     fontSize: "3rem",
     paddingBottom: "140px",
+    marginTop: "125px",
   };
 
   const authTernary = () => {

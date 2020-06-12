@@ -53,17 +53,18 @@ const MeetingTable = (props) => {
 
   return (
     <>
-      <h3 style={{ textAlign: "center", marginTop: "40px" }}>
+      <h3
+        style={{ textAlign: "center", marginTop: "40px", letterSpacing: "1px" }}
+      >
         Current <font color="#e33e42">Indiana</font>polis{" "}
         <font color="#e33e42">N</font>A Meetings
       </h3>
-      <hr />
+      <br />
       <Table
         hover
         dark
         style={{
           borderRadius: "10px",
-          height: "500px",
           overflow: "scroll",
           display: "block",
           overflowX: "hidden",
