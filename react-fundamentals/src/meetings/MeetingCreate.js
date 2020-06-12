@@ -1,5 +1,15 @@
 import React, { useState } from "react";
-import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import {
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Container,
+  Row,
+  Col,
+  Fade,
+} from "reactstrap";
 import APIURL from "../helpers/environment";
 
 const MeetingCreate = (props) => {
@@ -8,6 +18,14 @@ const MeetingCreate = (props) => {
   const [location, setLocation] = useState("");
   const [time, setTime] = useState("");
   const [openclosed, setOpenClosed] = useState("");
+
+  const [fadeOut, setFadeOut] = useState(false);
+
+  const toggleButton = () => setFadeOut(!fadeOut);
+
+  const inputStyle = {
+    maxWidth: "200px",
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,57 +56,89 @@ const MeetingCreate = (props) => {
   };
 
   return (
-    <>
-      <h4>Add a new meeting</h4>
+    <Container>
+      <h3 style={{ textAlign: "center" }}>
+        <font color="#e33e42">A</font>dd <font color="#e33e42">M</font>eeting
+      </h3>
       <Form onSubmit={handleSubmit}>
-        <FormGroup>
-          <Label htmlFor="name" />
-          <h6>Name</h6>
-          <Input
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="day" />
-          <h6>Day</h6>
-          <Input
-            name="day"
-            value={day}
-            onChange={(e) => setDay(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="location" />
-          <h6>Location</h6>
-          <Input
-            name="location"
-            value={location}
-            onChange={(e) => setLocation(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="time" />
-          <h6>Time</h6>
-          <Input
-            name="time"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="openclosed" />
-          <h6>Open or Closed</h6>
-          <Input
-            name="openclosed"
-            value={openclosed}
-            onChange={(e) => setOpenClosed(e.target.value)}
-          />
-        </FormGroup>
-        <Button type="submit">Submit</Button>
+        <Row>
+          <Col md="6">
+            <FormGroup>
+              <Label htmlFor="name" />
+              <h5>
+                <font color="#e33e42">N</font>ame
+              </h5>
+              <Input
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </FormGroup>
+          </Col>
+          <Col md="6">
+            <FormGroup>
+              <Label htmlFor="location" />
+              <h5>
+                <font color="#e33e42">L</font>ocation
+              </h5>
+              <Input
+                name="location"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+              />
+            </FormGroup>
+          </Col>
+          <Col md="4">
+            <FormGroup>
+              <Label htmlFor="day" />
+              <h5>
+                <font color="#e33e42">D</font>ay
+              </h5>
+              <Input
+                name="day"
+                value={day}
+                onChange={(e) => setDay(e.target.value)}
+              />
+            </FormGroup>
+          </Col>
+
+          <Col md="4">
+            <FormGroup>
+              <Label htmlFor="time" />
+              <h5>
+                <font color="#e33e42">T</font>ime
+              </h5>
+              <Input
+                name="time"
+                value={time}
+                onChange={(e) => setTime(e.target.value)}
+              />
+            </FormGroup>
+          </Col>
+          <Col md="4">
+            <FormGroup>
+              <Label htmlFor="openclosed" />
+              <h5>
+                <font color="#e33e42">O</font>pen or{" "}
+                <font color="#e33e42">C</font>
+                losed
+              </h5>
+              <Input
+                name="openclosed"
+                value={openclosed}
+                onChange={(e) => setOpenClosed(e.target.value)}
+              />
+            </FormGroup>
+          </Col>
+        </Row>
+        <Button color="light" type="submit" onClick={toggleButton}>
+          Submit
+        </Button>
+        <Fade in={fadeOut} tag="h5" className="mt-3">
+          Your meeting has been added!
+        </Fade>
       </Form>
-    </>
+    </Container>
   );
 };
 export default MeetingCreate;

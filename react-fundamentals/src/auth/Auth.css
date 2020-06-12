@@ -3,7 +3,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightcoral;
 }
 
 /* .authForm {
@@ -15,7 +14,7 @@ form {
 } */
 
 .logo {
-  margin-top: 125px;
+  margin-top: 25px;
   padding-left: 100px;
   font-family: "Ubuntu", sans-serif;
 }

@@ -23,6 +23,10 @@ const MeetingEdit = (props) => {
     props.meetingToUpdate.openclosed
   );
 
+  const updateStyle = {
+    color: "black",
+  };
+
   const meetingUpdate = (event, meeting) => {
     event.preventDefault();
     fetch(`${APIURL}/meeting/${props.meetingToUpdate.id}`, {
@@ -34,6 +38,10 @@ const MeetingEdit = (props) => {
         time: editTime,
         openclosed: editOpenClosed,
       }),
+      header: new Headers({
+        "Content-Type": "application/json",
+        Authorization: props.token,
+      }),
     }).then((res) => {
       props.fetchMeetings();
       props.updateOff();
@@ -42,7 +50,7 @@ const MeetingEdit = (props) => {
 
   return (
     <>
-      <Modal isOpen={true}>
+      <Modal isOpen={true} style={updateStyle}>
         <ModalHeader>Log a Meeting</ModalHeader>
         <ModalBody>
           <Form onSubmit={meetingUpdate}>
@@ -84,12 +92,7 @@ const MeetingEdit = (props) => {
                 name="openclosed"
                 value={editOpenClosed}
                 onChange={(e) => setEditOpenClosed(e.target.value)}
-              >
-                <option>
-                  <option value="Open">Open</option>
-                  <option value="Closed">Closed</option>
-                </option>
-              </Input>
+              ></Input>
             </FormGroup>
 
             <Button type="submit">Edit the meeting</Button>

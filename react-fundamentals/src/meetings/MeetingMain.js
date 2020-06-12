@@ -10,6 +10,14 @@ const MeetingMain = (props) => {
   const [updateActive, setUpdateActive] = useState(false);
   const [meetingToUpdate, setMeetingToUpdate] = useState({});
 
+  const tableStyle = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    maxWidth: "1175px",
+  };
+
   const fetchMeetings = () => {
     fetch(`${APIURL}/meeting`, {
       method: "GET",
@@ -43,12 +51,12 @@ const MeetingMain = (props) => {
   }, []);
 
   return (
-    <Container>
+    <Container style={tableStyle}>
       <Row>
-        <Col md="3">
+        <Col md="12">
           <MeetingCreate fetchMeetings={fetchMeetings} token={props.token} />
         </Col>
-        <Col md="6">
+        <Col md="12">
           <MeetingTable
             meetings={meetings}
             editUpdateMeeting={editUpdateMeeting}

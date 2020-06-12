@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, FormGroup, Label, Input, Button } from "reactstrap";
+import { Form, FormGroup, Label, Input } from "reactstrap";
 import APIURL from "../helpers/environment";
 
 const Signup = (props) => {
@@ -45,6 +45,7 @@ const Signup = (props) => {
           <Input
             onChange={(e) => setUsername(e.target.value)}
             name="username"
+            type="text"
             value={username}
             style={inputStyle}
           />

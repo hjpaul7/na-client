@@ -1,15 +1,5 @@
 import React, { useState } from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  Collapse,
-  Nav,
-  NavItem,
-  Button,
-} from "reactstrap";
-import { Route, Link, Switch } from "react";
-import Test from "../components/test";
+import { Navbar, NavbarToggler, Collapse, Nav, NavItem } from "reactstrap";
 
 const Sitebar = (props) => {
   const [isOpen, setIsOpen] = useState(false);

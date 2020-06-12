@@ -62,9 +62,9 @@ const Login = (props) => {
             style={inputStyle}
           />
         </FormGroup>
-        <button class="btn btn-primary" type="submit">
+        <Button color="btn btn-primary" type="submit">
           Login
-        </button>
+        </Button>
       </Form>
     </div>
   );

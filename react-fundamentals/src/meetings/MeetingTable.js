@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Table } from "reactstrap";
 import APIURL from "../helpers/environment";
+import "./MeetingTable.css";
 
 const MeetingTable = (props) => {
   const deleteMeeting = (meeting) => {
@@ -18,7 +19,6 @@ const MeetingTable = (props) => {
       // main might be INDEX
       return (
         <tr key={main}>
-          <th scope="row">{meeting.id}</th>
           <td>{meeting.name}</td>
           <td>{meeting.day}</td>
           <td>{meeting.location}</td>
@@ -26,7 +26,8 @@ const MeetingTable = (props) => {
           <td>{meeting.openclosed}</td>
           <td>
             <Button
-              color="primary"
+              type="button"
+              color="success"
               onClick={() => {
                 props.editUpdateMeeting(meeting);
                 props.updateOn();
@@ -35,7 +36,9 @@ const MeetingTable = (props) => {
               Update
             </Button>
             <Button
-              color="primary"
+              style={{ marginLeft: "5px" }}
+              type="button"
+              color="danger"
               onClick={() => {
                 deleteMeeting(meeting);
               }}
@@ -50,18 +53,31 @@ const MeetingTable = (props) => {
 
   return (
     <>
-      <h3>Current Indianapolis NA Meetings</h3>
+      <h3 style={{ textAlign: "center", marginTop: "40px" }}>
+        Current <font color="#e33e42">Indiana</font>polis{" "}
+        <font color="#e33e42">N</font>A Meetings
+      </h3>
       <hr />
-
-      <Table hover dark>
+      <Table
+        hover
+        dark
+        style={{
+          borderRadius: "10px",
+          height: "500px",
+          overflow: "scroll",
+          display: "block",
+          overflowX: "hidden",
+          height: "600px",
+        }}
+      >
         <thead>
           <tr>
-            <th>#</th>
             <th>Name</th>
             <th>Day</th>
             <th>Location</th>
             <th>Time</th>
             <th>Open or Closed</th>
+            <th>Update or Delete</th>
           </tr>
         </thead>
         <tbody>{meetingMapper()}</tbody>

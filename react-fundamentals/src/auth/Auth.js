@@ -21,11 +21,9 @@
 // export default Auth;
 
 import React, { useState } from "react";
-import { Button, Container, Row, Col } from "reactstrap";
 import Signup from "./Signup";
 import Login from "./Login";
 import "./Auth.css";
-import APIURL from "../helpers/environment";
 
 const Auth = (props) => {
   const [username, setUsername] = useState("");
@@ -33,7 +31,8 @@ const Auth = (props) => {
   const [login, setLogin] = useState(true);
 
   const logoStyle = {
-    fontSize: "4rem",
+    fontSize: "3rem",
+    paddingBottom: "140px",
   };
 
   const authTernary = () => {
@@ -55,6 +54,13 @@ const Auth = (props) => {
 
   return (
     <div className="logo">
+      <img
+        src="https://lh3.googleusercontent.com/proxy/56K3VH-0mUnw9jhT5IvYq3YVm_INU3ffRFvPLNARf2FFNO4n4BVNXLHBXJH_NCFfMB76CSl_aF3pgHGxcF1zFlzE"
+        alt="NA Logo"
+        height="200px"
+        style={{ float: "left", paddingRight: "40px", opacity: "0.8" }}
+      />
+
       <p style={logoStyle}>
         <font color="#e33e42">N</font>arcotics <font color="#e33e42">A</font>
         nonymous
