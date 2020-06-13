@@ -26,6 +26,9 @@ const Login = (props) => {
       .then((response) => response.json())
       .then((data) => {
         props.updateToken(data.sessionToken);
+        console.log(data);
+        props.updatedUsername(data.user.username);
+        props.updatedMessage(data.message);
       });
   };
 

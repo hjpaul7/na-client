@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Input } from "reactstrap";
 import APIURL from "../helpers/environment";
+import TextField from "@material-ui/core/TextField";
 
 const Signup = (props) => {
   const [username, setUsername] = useState("");
@@ -22,12 +23,14 @@ const Signup = (props) => {
       headers: new Headers({
         "Content-Type": "application/json",
       }),
-    }).then((response) =>
-      response.json().then((data) => {
-        console.log(data);
+    })
+      .then((response) => response.json())
+      .then((data) => {
         props.updateToken(data.sessionToken);
-      })
-    );
+        console.log(data);
+        props.updatedUsername(data.user.username);
+        props.updatedMessage(data.message);
+      });
   };
 
   return (

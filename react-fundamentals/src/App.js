@@ -7,10 +7,18 @@ import MeetingMain from "./meetings/MeetingMain";
 
 function App() {
   const [sessionToken, setSessionToken] = useState("");
+  const [username, setUsername] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
       setSessionToken(localStorage.getItem("token"));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (localStorage.getItem("username")) {
+      setUsername(localStorage.getItem("username"));
     }
   }, []);
 
@@ -20,16 +28,34 @@ function App() {
     console.log(sessionToken);
   };
 
+  const updatedUsername = (newUsername) => {
+    localStorage.setItem("username", newUsername);
+    setUsername(newUsername);
+    console.log(newUsername);
+  };
+
+  const updatedMessage = (newMessage) => {
+    localStorage.setItem("message", newMessage);
+    setMessage(newMessage);
+    console.log(newMessage);
+  };
+
   const clearToken = () => {
     localStorage.clear();
     setSessionToken("");
+    setUsername("");
+    setMessage("");
   };
 
   const protectedViews = () => {
     return sessionToken === localStorage.getItem("token") ? (
       <MeetingMain token={sessionToken} />
     ) : (
-      <Auth updateToken={updateToken} />
+      <Auth
+        updateToken={updateToken}
+        updatedUsername={updatedUsername}
+        updatedMessage={updatedMessage}
+      />
     );
   };
 

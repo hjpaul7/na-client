@@ -9,6 +9,7 @@ import {
   Row,
   Col,
   Fade,
+  Badge,
 } from "reactstrap";
 import APIURL from "../helpers/environment";
 
@@ -57,7 +58,7 @@ const MeetingCreate = (props) => {
 
   return (
     <Container>
-      <h3
+      <h2
         style={{
           textAlign: "center",
           letterSpacing: "1px",
@@ -65,7 +66,7 @@ const MeetingCreate = (props) => {
         }}
       >
         Add Meeting
-      </h3>
+      </h2>
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col md="6">

@@ -6,10 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white !important;
-  background: linear-gradient(to bottom, coral, lightcoral);
-  /* background: linear-gradient(to bottom, #485668, #282d42); */
-  /* background-color: #1f2833 !important; */
-  /* background-color: #0b0c10 !important; */
+  background: linear-gradient(to top, lightcoral, coral);
+  /* background: linear-gradient(to bottom, #fab18d, coral); */
+  /* background-color: #fab18d !important; */
+  /* background-color: #1f1f23 !important; */
   /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png") !important; */
 }
 

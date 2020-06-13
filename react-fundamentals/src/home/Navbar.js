@@ -53,21 +53,75 @@ const useStyles = makeStyles({
 const Sitebar = (props) => {
   const classes = useStyles();
 
+  function logoutBtn() {
+    return localStorage.getItem("token") === null ? (
+      ""
+    ) : (
+      <Button onClick={props.clickLogout} color="inherit" id="navLog">
+        Logout
+      </Button>
+    );
+  }
+
+  // function welcomeUser() {
+  //   return localStorage.getItem("username") === null ? (
+  //     <font color="lightgray">
+  //       Please Register or Login to view NA Meetings
+  //     </font>
+  //   ) : (
+  //     <h6>
+  //       <font color="#ffb347">
+  //         <b>Welcome,</b>
+  //       </font>{" "}
+  //       {localStorage.getItem("username")}
+  //     </h6>
+  //   );
+  // }
+
+  function welcomeMessage() {
+    return localStorage.getItem("message") === null ? (
+      <p>Please Signup or Login to see Meetings</p>
+    ) : localStorage.getItem("message") === "You have succesfully logged in" ? (
+      <h6>
+        {" "}
+        <font color="#ffb347">
+          <b>Welcome back,</b>
+        </font>{" "}
+        {localStorage.getItem("username")}
+      </h6>
+    ) : localStorage.getItem("message") === "user created" ? (
+      <h6>
+        {" "}
+        <font color="#ffb347">
+          <b>Welcome,</b>
+        </font>{" "}
+        {localStorage.getItem("username")}
+      </h6>
+    ) : (
+      "null"
+    );
+  }
+
+  // function welcomeBackUser() {
+  //   return localStorage.getItem("user created") === "user created"();
+  // }
+
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ opacity: "0.9" }}>
         <Toolbar className={classes.color}>
           <Typography variant="p" id="navTitle" className={classes.title}>
-            Welcome "Username"
+            {welcomeMessage()}
           </Typography>
-          <Button
+          {/* <Button
             color="primary"
             variant="outlined"
             type="submit"
             onClick={props.clickLogout}
           >
             Logout
-          </Button>
+          </Button> */}
+          {logoutBtn()}
         </Toolbar>
       </AppBar>
     </div>
