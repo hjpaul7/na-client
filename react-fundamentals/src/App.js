@@ -4,6 +4,8 @@ import "./App.css";
 import Sitebar from "./home/Navbar";
 import Auth from "./auth/Auth";
 import MeetingMain from "./meetings/MeetingMain";
+import Sidebar from "./components/site/Sidebar";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   const [sessionToken, setSessionToken] = useState("");
@@ -62,8 +64,10 @@ function App() {
   return (
     <div>
       <Sitebar clickLogout={clearToken} />
-
-      {protectedViews()}
+      <Router>
+        <Sidebar protectedViews={protectedViews} />
+      </Router>
+      {/* {protectedViews()} */}
     </div>
   );
 }

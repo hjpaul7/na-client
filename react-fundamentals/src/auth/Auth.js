@@ -30,11 +30,11 @@ const Auth = (props) => {
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(true);
 
-  const logoStyle = {
-    fontSize: "3rem",
-    paddingBottom: "70px",
-    marginTop: "125px",
-  };
+  // const logoStyle = {
+  //   fontSize: "3rem",
+  //   paddingBottom: "50px",
+  //   marginTop: "25px",
+  // };
 
   const authTernary = () => {
     return login ? (
@@ -67,14 +67,14 @@ const Auth = (props) => {
         src="https://i.imgur.com/m0fiJfe.gif"
         alt="NA Logo"
         height="200px"
-        style={{ float: "left", paddingRight: "40px", opacity: "0.8" }}
+        style={{ float: "center", opacity: "0.8" }}
       />
 
-      <p style={logoStyle}>
+      {/* <p style={logoStyle}>
         <font color="white">N</font>
         <font color="white">arcotics</font>{" "}
         <font color="#e33e42">Anonymous</font>
-      </p>
+      </p> */}
       <div className="authForm">
         <form>
           <h1>{authTernary()}</h1>

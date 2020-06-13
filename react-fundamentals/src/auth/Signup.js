@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Input } from "reactstrap";
 import APIURL from "../helpers/environment";
-import TextField from "@material-ui/core/TextField";
 
 const Signup = (props) => {
   const [username, setUsername] = useState("");

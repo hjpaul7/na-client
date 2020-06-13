@@ -62,7 +62,7 @@ const MeetingCreate = (props) => {
         style={{
           textAlign: "center",
           letterSpacing: "1px",
-          marginTop: "125px",
+          marginTop: "5px",
         }}
       >
         Add Meeting
