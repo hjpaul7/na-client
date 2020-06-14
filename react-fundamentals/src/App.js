@@ -6,6 +6,7 @@ import Auth from "./auth/Auth";
 import MeetingMain from "./meetings/MeetingMain";
 import Sidebar from "./components/site/Sidebar";
 import { BrowserRouter as Router } from "react-router-dom";
+import CovidAlert from "./home/CovidAlert";
 
 function App() {
   const [sessionToken, setSessionToken] = useState("");
@@ -49,6 +50,12 @@ function App() {
     setMessage("");
   };
 
+  // function sidebarTernary() {
+  //   return localStorage.getItem("token") === null ? "" : <Sidebar />;
+  // }
+
+  // if session token is null, then don't display the sidebar: if not null display sidebar
+
   const protectedViews = () => {
     return sessionToken === localStorage.getItem("token") ? (
       <MeetingMain token={sessionToken} />
@@ -63,11 +70,11 @@ function App() {
 
   return (
     <div>
-      <Sitebar clickLogout={clearToken} />
+      <CovidAlert />
       <Router>
+        <Sitebar clickLogout={clearToken} />
         <Sidebar protectedViews={protectedViews} />
       </Router>
-      {/* {protectedViews()} */}
     </div>
   );
 }

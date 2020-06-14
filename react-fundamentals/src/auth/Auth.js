@@ -30,11 +30,11 @@ const Auth = (props) => {
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(true);
 
-  // const logoStyle = {
-  //   fontSize: "3rem",
-  //   paddingBottom: "50px",
-  //   marginTop: "25px",
-  // };
+  const logoStyle = {
+    fontSize: "3rem",
+    paddingBottom: "50px",
+    marginTop: "25px",
+  };
 
   const authTernary = () => {
     return login ? (
@@ -63,18 +63,18 @@ const Auth = (props) => {
 
   return (
     <div className="logo">
-      <img
-        src="https://i.imgur.com/m0fiJfe.gif"
+      {/* <img
+        src="https://img2.pngio.com/narcotics-anonymous-na-logo-full-size-png-download-seekpng-na-logo-png-615_615.png"
         alt="NA Logo"
         height="200px"
         style={{ float: "center", opacity: "0.8" }}
-      />
+      /> */}
 
-      {/* <p style={logoStyle}>
+      <p style={logoStyle}>
         <font color="white">N</font>
         <font color="white">arcotics</font>{" "}
         <font color="#e33e42">Anonymous</font>
-      </p> */}
+      </p>
       <div className="authForm">
         <form>
           <h1>{authTernary()}</h1>
@@ -82,8 +82,9 @@ const Auth = (props) => {
             className="btn btn-primary"
             type="submit"
             onClick={loginToggle}
+            style={{ paddingRight: "105px" }}
           >
-            Login
+            Login/Signup
           </button>
         </form>
       </div>

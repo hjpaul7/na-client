@@ -12,6 +12,7 @@ import {
   Badge,
 } from "reactstrap";
 import APIURL from "../helpers/environment";
+import styled from "styled-components";
 
 const MeetingCreate = (props) => {
   const [name, setName] = useState("");
@@ -27,6 +28,18 @@ const MeetingCreate = (props) => {
   const inputStyle = {
     maxWidth: "200px",
   };
+
+  const Div = styled.div`
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    // width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  `;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -58,6 +71,21 @@ const MeetingCreate = (props) => {
 
   return (
     <Container>
+      <Div>
+        If a new NA meeting has been started in Indianapolis, please feel free
+        to create a new meeting below to help fellow Hoosiers into recovery, or
+        find a meeting closer to them! Please include the meeting Name,
+        Location, Day, Time and if the meeting is Open or Closed.
+        {/* <hr /> */}
+      </Div>
+      <Div>
+        <b>What does Open or closed mean?</b>
+        <li>
+          An Open meeting allows non addicts to come to the meetings as well,
+          for support or to learn about the program. A Closed meeting is only
+          for addicts or recoverying addicts
+        </li>
+      </Div>
       <h2
         style={{
           textAlign: "center",

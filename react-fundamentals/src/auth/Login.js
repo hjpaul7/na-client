@@ -46,9 +46,12 @@ const Login = (props) => {
           </Label>
           <Input
             onChange={(e) => setUsername(e.target.value)}
+            type="text"
             name="username"
             value={username}
             style={inputStyle}
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}"
+            title="Must have at least one number, uppercase, and a lowercase letter. Min 4 chars."
           />
         </FormGroup>
         <FormGroup>

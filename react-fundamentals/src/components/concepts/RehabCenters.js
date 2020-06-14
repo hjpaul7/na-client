@@ -1,0 +1,64 @@
+import React from "react";
+import styled from "styled-components";
+
+const Div = styled.div`
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-right: 20px;
+  padding-bottom: 25px;
+`;
+
+const RehabCenters = () => {
+  return (
+    <Div>
+      <h4>Rehab Centers in Indianapolis</h4>
+      <hr />
+      <h6>
+        <a href="/">Salvation Army Harbor Lights Center</a>
+      </h6>
+      <li>2400 N. Tibbs Ave</li>
+      <li>(317) 972-1450</li>
+      <hr />
+      <h6>
+        <a href="/">Fairbanks Addiction Treatment and Recovery Center</a>
+      </h6>
+      <li>8102 Clearvista Parkway</li>
+      <li>(317) 849-8222</li>
+      <hr />
+      <h6>
+        <a href="/">Roudebush VA Substance Abuse Treatment Section</a>
+      </h6>
+      <li>1481 W. 10th St</li>
+      <li>(317) 554-0000</li>
+      <hr />
+      <h6>
+        <a href="/">Life Recovery Center East</a>
+      </h6>
+      <li>4455 McCoy St</li>
+      <li>(317) 887-3290</li>
+      <hr />
+      <h6>
+        <a href="/">Brown Building LLC</a>
+      </h6>
+      <li>55 S State Ave</li>
+      <li>(317) 525-0226</li>
+      <hr />
+      <h6>
+        <a href="/">Community Hospital DBA</a>
+      </h6>
+      <li>6950 Hillsdale Court</li>
+      <li>(317) 621-7600</li>
+      <hr />
+      <h6>
+        <a href="/">Indianapolis Treatment Center</a>
+      </h6>
+      <li>2626 E. 46th St</li>
+      <li>(855) 509-8002</li>
+      <hr />
+    </Div>
+  );
+};
+export default RehabCenters;

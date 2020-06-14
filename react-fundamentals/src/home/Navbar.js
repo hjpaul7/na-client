@@ -34,7 +34,7 @@ const Sitebar = (props) => {
   function welcomeMessage() {
     return localStorage.getItem("message") === null ? (
       <font color="white">
-        <p>Please Signup or Login to see Meetings</p>
+        <p>Please Register or Login to view Meetings</p>
       </font>
     ) : localStorage.getItem("message") === "You have succesfully logged in" ? (
       <h6>

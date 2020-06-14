@@ -50,6 +50,7 @@ const Signup = (props) => {
             type="text"
             value={username}
             style={inputStyle}
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}"
           />
         </FormGroup>
         <FormGroup>
@@ -64,6 +65,8 @@ const Signup = (props) => {
             type="password"
             value={password}
             style={inputStyle}
+            pattern="(?=.*\d).{5,}"
+            title="Password must be at least 5 characters"
           />
         </FormGroup>
         <button className="btn btn-primary" type="submit">
