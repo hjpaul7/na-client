@@ -2,13 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const Div = styled.div`
-  background-color: white;
-  color: black;
+  background-color: #363136;
+  opacity: 0.8;
   border-radius: 5px;
   padding-left: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
   margin-right: 20px;
-  padding-bottom: 25px;
+  max-width: 100%;
 `;
 
 const RehabCenters = () => {
