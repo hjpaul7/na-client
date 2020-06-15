@@ -5,6 +5,7 @@ import AddictiveDrugs from "../concepts/AddictiveDrugs";
 import MeetingCreate from "../../meetings/MeetingCreate";
 import Resources from "../concepts/Resources";
 import RehabCenters from "../concepts/RehabCenters";
+import Emergency from "../concepts/Emergency";
 
 const Sidebar = (props) => {
   // function viewMeetingRouter() {
@@ -50,7 +51,7 @@ const Sidebar = (props) => {
           </li>
           <hr />
           <li>
-            <Link to="/test">
+            <Link to="/emergency">
               <font color="e33e42">Emergency</font>
             </Link>
           </li>
@@ -64,8 +65,8 @@ const Sidebar = (props) => {
           </Route> */}
           {/* <Route exact path="/meeting">
             <MeetingCreate />
-            {props.updatedToken}
           </Route> */}
+
           <Route exact path="/">
             {props.protectedViews()}
             {/* <MeetingMain /> */}
@@ -78,6 +79,9 @@ const Sidebar = (props) => {
           </Route>
           <Route exact path="/resources">
             <Resources />
+          </Route>
+          <Route exact path="/emergency">
+            <Emergency />
           </Route>
         </Switch>
       </div>

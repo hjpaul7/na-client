@@ -82,7 +82,7 @@ const MeetingTable = (props) => {
               <TableCell align="right">
                 <Button
                   type="button"
-                  color="success"
+                  color="primary"
                   onClick={() => {
                     props.editUpdateMeeting(meeting);
                     props.updateOn();

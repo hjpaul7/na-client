@@ -59,7 +59,7 @@ const Sitebar = (props) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ opacity: "0.9" }}>
+      <AppBar position="static">
         <Toolbar className={classes.color}>
           <Typography variant="p" id="navTitle" className={classes.title}>
             {welcomeMessage()}

@@ -65,7 +65,7 @@ const Signup = (props) => {
             type="password"
             value={password}
             style={inputStyle}
-            pattern="(?=.*\d).{5,}"
+            pattern="{5,}"
             title="Password must be at least 5 characters"
           />
         </FormGroup>

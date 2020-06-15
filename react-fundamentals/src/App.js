@@ -7,6 +7,7 @@ import MeetingMain from "./meetings/MeetingMain";
 import Sidebar from "./components/site/Sidebar";
 import { BrowserRouter as Router } from "react-router-dom";
 import CovidAlert from "./home/CovidAlert";
+import MeetingCreate from "./meetings/MeetingCreate";
 
 function App() {
   const [sessionToken, setSessionToken] = useState("");
@@ -73,7 +74,7 @@ function App() {
       <CovidAlert />
       <Router>
         <Sitebar clickLogout={clearToken} />
-        <Sidebar protectedViews={protectedViews} />
+        <Sidebar protectedViews={protectedViews} token={sessionToken} />
       </Router>
     </div>
   );

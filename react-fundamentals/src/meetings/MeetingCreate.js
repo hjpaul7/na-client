@@ -30,8 +30,10 @@ const MeetingCreate = (props) => {
   };
 
   const Div = styled.div`
-    background-color: white;
-    color: black;
+    background-color: #363136;
+    opacity: 0.8;
+    font-size: 14px;
+    color: white;
     padding: 10px;
     border-radius: 5px;
     // width: 100%;
@@ -73,9 +75,8 @@ const MeetingCreate = (props) => {
     <Container>
       <Div>
         If a new NA meeting has been started in Indianapolis, please feel free
-        to create a new meeting below to help fellow Hoosiers into recovery, or
-        find a meeting closer to them! Please include the meeting Name,
-        Location, Day, Time and if the meeting is Open or Closed.
+        to add it below to help fellow Hoosiers into recovery, or find a meeting
+        closer to them! Please fill out all the fields.
         {/* <hr /> */}
       </Div>
       <Div>
@@ -100,9 +101,7 @@ const MeetingCreate = (props) => {
           <Col md="6">
             <FormGroup>
               <Label htmlFor="name" />
-              <h5 style={{ letterSpacing: "1px" }}>
-                <font color="#e33e42">N</font>ame
-              </h5>
+              <h5 style={{ letterSpacing: "1px" }}>Name</h5>
               <Input
                 name="name"
                 value={name}
@@ -113,9 +112,7 @@ const MeetingCreate = (props) => {
           <Col md="6">
             <FormGroup>
               <Label htmlFor="location" />
-              <h5 style={{ letterSpacing: "1px" }}>
-                <font color="#e33e42">L</font>ocation
-              </h5>
+              <h5 style={{ letterSpacing: "1px" }}>Location</h5>
               <Input
                 name="location"
                 value={location}
@@ -126,9 +123,7 @@ const MeetingCreate = (props) => {
           <Col md="4">
             <FormGroup>
               <Label htmlFor="day" />
-              <h5 style={{ letterSpacing: "1px" }}>
-                <font color="#e33e42">D</font>ay
-              </h5>
+              <h5 style={{ letterSpacing: "1px" }}>Day</h5>
               <Input
                 name="day"
                 value={day}
@@ -140,9 +135,7 @@ const MeetingCreate = (props) => {
           <Col md="4">
             <FormGroup>
               <Label htmlFor="time" />
-              <h5 style={{ letterSpacing: "1px" }}>
-                <font color="#e33e42">T</font>ime
-              </h5>
+              <h5 style={{ letterSpacing: "1px" }}>Time</h5>
               <Input
                 name="time"
                 value={time}
@@ -153,11 +146,7 @@ const MeetingCreate = (props) => {
           <Col md="4">
             <FormGroup>
               <Label htmlFor="openclosed" />
-              <h5 style={{ letterSpacing: "1px" }}>
-                <font color="#e33e42">O</font>pen or{" "}
-                <font color="#e33e42">C</font>
-                losed
-              </h5>
+              <h5 style={{ letterSpacing: "1px" }}>Open or Closed</h5>
               <Input
                 name="openclosed"
                 value={openclosed}

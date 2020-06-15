@@ -62,13 +62,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.drugabuse.gov/publications/effective-treatments-opioid-addiction"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/opiates/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.cdc.gov/drugoverdose/index.html"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -96,13 +108,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.drugabuse.gov/publications/research-reports/heroin/what-are-treatments-heroin-use-disorder"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/heroin/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.cdc.gov/drugoverdose/opioids/heroin.html"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -129,13 +153,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/meth/treatment/"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/meth/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/methamphetamine/overdose/"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -162,13 +198,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.drugabuse.gov/publications/research-reports/cocaine/what-treatments-are-effective-cocaine-abusers"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/cocaine/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/cocaine/overdose/"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -195,13 +243,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://americanaddictioncenters.org/fentanyl-treatment"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.drugabuse.gov/drug-topics/fentanyl"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/fentanyl/overdose/"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -228,13 +288,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://americanaddictioncenters.org/ecstasy-abuse/molly-mdma"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.drugabuse.gov/publications/drugfacts/mdma-ecstasymolly"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/ecstasy/mdma-overdose/"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -261,13 +333,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/crack-cocaine/treatment/"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/crack-cocaine/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/crack/overdose/"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -296,13 +380,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://americanaddictioncenters.org/pcp-abuse/how-to-treat-overdose"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/hallucinogens/pcp-phencyclidine/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://americanaddictioncenters.org/pcp-abuse/how-to-treat-overdose"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -332,10 +428,18 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/flakka/"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/flakka-addiction-abuse/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
             <a href="/" target="_blank" class="card-link">
@@ -368,13 +472,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://americanaddictioncenters.org/benzodiazepine"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/benzodiazepines/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/benzodiazepines/overdose/"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -404,13 +520,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/inhalants/treatment/"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/inhalants/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/inhalants/overdose/"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
@@ -439,13 +567,25 @@ const AddictiveDrugs = () => {
             </li>
           </ul>
           <div class="card-body">
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://drugabuse.com/ketamine/how-to-help-an-addict/"
+              target="_blank"
+              class="card-link"
+            >
               Treatment
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.addictioncenter.com/drugs/hallucinogens/ketamine/"
+              target="_blank"
+              class="card-link"
+            >
               More Info
             </a>
-            <a href="/" target="_blank" class="card-link">
+            <a
+              href="https://www.drugs.com/illicit/ketamine.html"
+              target="_blank"
+              class="card-link"
+            >
               Overdosing
             </a>
           </div>
