@@ -82,7 +82,7 @@ const MeetingCreate = (props) => {
         </p>
       </Div>
       <Div>
-        <b>What does Open or closed mean?</b>
+        <b>What does Open or Closed mean?</b>
         <li>
           An Open meeting allows non addicts to come to the meetings as well,
           for support or to learn about the program. A Closed meeting is only
