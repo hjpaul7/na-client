@@ -60,7 +60,7 @@
 .sidebar-list-styling {
   padding-left: 50px;
   padding-top: 15px;
-  width: 15%;
+  min-width: 15%;
   background-color: #363136;
   color: white;
 }
