@@ -66,6 +66,8 @@ const Login = (props) => {
             type="password"
             value={password}
             style={inputStyle}
+            pattern="{5,}"
+            title="Password must be at least 5 characters"
           />
         </FormGroup>
         <Button color="btn btn-primary" type="submit">
