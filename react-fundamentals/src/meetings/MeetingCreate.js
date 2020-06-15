@@ -86,7 +86,7 @@ const MeetingCreate = (props) => {
         <li>
           An Open meeting allows non addicts to come to the meetings as well,
           for support or to learn about the program. A Closed meeting is only
-          for addicts or recoverying addicts
+          for addicts or recovering addicts
         </li>
       </Div>
       <h2
