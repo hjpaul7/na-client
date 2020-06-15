@@ -36,12 +36,12 @@ const Signup = (props) => {
     <div>
       <Form className="signup" onSubmit={handleSubmit} style={myStyle}>
         <h2>
-          <font color="lightcoral">Sign</font>up
+          <font color="coral">Sign</font>up
         </h2>
         <FormGroup>
           <Label htmlFor="username">
             <h5>
-              <font color="lightcoral">User</font>name
+              <font color="coral">User</font>name
             </h5>
           </Label>
           <Input
@@ -57,7 +57,7 @@ const Signup = (props) => {
         <FormGroup>
           <Label htmlFor="password">
             <h5>
-              <font color="lightcoral">Pass</font>word
+              <font color="coral">Pass</font>word
             </h5>
           </Label>
           <Input

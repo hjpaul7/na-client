@@ -41,7 +41,7 @@ const Login = (props) => {
         <FormGroup>
           <Label htmlFor="username">
             <h5>
-              <font color="lightcoral">User</font>name
+              <font color="coral">User</font>name
             </h5>
           </Label>
           <Input
@@ -57,7 +57,7 @@ const Login = (props) => {
         <FormGroup>
           <Label htmlFor="password">
             <h5>
-              <font color="lightcoral">Pass</font>word
+              <font color="coral">Pass</font>word
             </h5>
           </Label>
           <Input

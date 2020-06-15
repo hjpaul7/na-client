@@ -87,7 +87,7 @@ const Auth = (props) => {
 
       <p style={logoStyle}>
         Narcotics
-        <font color="lightcoral">
+        <font color="coral">
           <b> Anonymous</b>
         </font>
       </p>
