@@ -74,10 +74,12 @@ const MeetingCreate = (props) => {
   return (
     <Container>
       <Div>
-        If a new NA meeting has been started in Indianapolis, please feel free
-        to add it below to help fellow Hoosiers into recovery, or find a meeting
-        closer to them! Please fill out all the fields.
-        {/* <hr /> */}
+        <p>
+          {" "}
+          If a new <b>NA</b> meeting has been started in Indianapolis, feel free
+          to add it below to help fellow Hoosiers into recovery. Please fill out
+          all the fields.
+        </p>
       </Div>
       <Div>
         <b>What does Open or closed mean?</b>
