@@ -33,7 +33,7 @@ const Div = styled.div`
   color: white;
   border-radius: 5px;
   padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
   width: 300px;

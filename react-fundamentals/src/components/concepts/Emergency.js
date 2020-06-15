@@ -8,6 +8,7 @@ const Div = styled.div`
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 5px;
   margin-right: 20px;
   margin-top: 100px;
   margin-bottom: 410px;
@@ -23,6 +24,21 @@ const Emergency = () => {
           <b>911.</b>
         </font>
       </h3>
+      <hr />
+      <h6>
+        <li>
+          If you're experiencing an elevated heart rate, losing sensation to
+          your fingers or face, believe you feel a seizure coming on, or even
+          worse Cardiac Arrest then you need to call 911. Don't assume you'll
+          get through it.{" "}
+          <font color="coral">
+            <b>
+              I've been there, you won't. You need medical attention. Call.
+              Right. Now.
+            </b>
+          </font>
+        </li>
+      </h6>
     </Div>
   );
 };
