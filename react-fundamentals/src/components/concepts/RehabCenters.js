@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "./RehabCenters.css";
 
 const Div = styled.div`
   background-color: #363136;
