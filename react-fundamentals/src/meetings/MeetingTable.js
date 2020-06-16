@@ -1,7 +1,8 @@
 import React from "react";
-import { Button } from "reactstrap";
+// import { Button } from "reactstrap";
 import Table from "@material-ui/core/Table";
 import { makeStyles } from "@material-ui/core/styles";
+import { Button } from "@material-ui/core";
 
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -81,7 +82,7 @@ const MeetingTable = (props) => {
               <TableCell align="center">{meeting.openclosed}</TableCell>
               <TableCell align="right">
                 <Button
-                  type="button"
+                  variant="contained"
                   color="primary"
                   onClick={() => {
                     props.editUpdateMeeting(meeting);
@@ -92,8 +93,8 @@ const MeetingTable = (props) => {
                 </Button>
                 <Button
                   style={{ marginLeft: "5px" }}
-                  type="button"
-                  color="danger"
+                  variant="contained"
+                  color="secondary"
                   onClick={() => {
                     deleteMeeting(meeting);
                   }}

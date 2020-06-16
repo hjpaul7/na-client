@@ -21,10 +21,12 @@
 // export default Auth;
 
 import React, { useState } from "react";
-import Signup from "./Signup";
-import Login from "./Login";
+import Signup2 from "./Signup2";
+import Login2 from "./Login2";
 import "./Auth.css";
 import styled from "styled-components";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 
 const Div = styled.div`
   background-color: #363136;
@@ -36,30 +38,38 @@ const Div = styled.div`
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
-  width: 300px;
+  width: 310px;
   margin-left: 125px;
 `;
+
+const useStyles = makeStyles((theme) => ({
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
 
 const Auth = (props) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(true);
 
-  const logoStyle = {
-    fontSize: "3rem",
-    paddingBottom: "50px",
-    marginTop: "25px",
-  };
+  // const classes = useStyles();
+
+  // const logoStyle = {
+  //   fontSize: "3rem",
+  //   paddingBottom: "50px",
+  //   marginTop: "25px",
+  // };
 
   const authTernary = () => {
     return login ? (
-      <Signup
+      <Signup2
         updateToken={props.updateToken}
         updatedUsername={props.updatedUsername}
         updatedMessage={props.updatedMessage}
       />
     ) : (
-      <Login
+      <Login2
         updateToken={props.updateToken}
         updatedUsername={props.updatedUsername}
         updatedMessage={props.updatedMessage}
@@ -77,37 +87,42 @@ const Auth = (props) => {
   };
 
   return (
-    <div className="logo">
-      {/* <img
-        src="https://img2.pngio.com/narcotics-anonymous-na-logo-full-size-png-download-seekpng-na-logo-png-615_615.png"
-        alt="NA Logo"
-        height="200px"
-        style={{ float: "center", opacity: "0.8" }}
-      /> */}
-
-      <p style={logoStyle}>
-        Narcotics
-        <font color="coral">
-          <b> Anonymous</b>
-        </font>
-      </p>
+    <>
+      <div className="logo">
+        <p>
+          Narcotics
+          <font color="coral">
+            <b> Anonymous</b>
+          </font>
+        </p>
+      </div>
       <Div>
         <p>There is hope in recovery. One day at a time.</p>
       </Div>
       <div className="authForm">
         <form>
-          <h1>{authTernary()}</h1>
-          <button
+          {authTernary()}
+          {/* <button
             className="btn btn-primary"
             type="submit"
             onClick={loginToggle}
             style={{ paddingRight: "105px" }}
           >
             Login/Signup
-          </button>
+          </button> */}
+          <Button
+            type="submit"
+            style={{ minWidth: "170px", marginTop: "-60px" }}
+            variant="contained"
+            color="primary"
+            // className={classes.submit}
+            onClick={loginToggle}
+          >
+            Login or Signup
+          </Button>
         </form>
       </div>
-    </div>
+    </>
   );
 };
 

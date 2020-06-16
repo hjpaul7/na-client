@@ -36,7 +36,8 @@ const Login = (props) => {
     <div>
       <Form onSubmit={handleSubmit} style={myStyle}>
         <h2>
-          <font color="lightcoral">Log</font>in
+          <font color="coral">Log</font>
+          in
         </h2>
         <FormGroup>
           <Label htmlFor="username">

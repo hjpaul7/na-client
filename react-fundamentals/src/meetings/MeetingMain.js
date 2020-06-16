@@ -4,8 +4,17 @@ import MeetingTable from "./MeetingTable";
 import MeetingCreate from "./MeetingCreate";
 import MeetingEdit from "./MeetingEdit";
 import APIURL from "../helpers/environment";
+import styled from "styled-components";
 
 const MeetingMain = (props) => {
+  const Div = styled.div`
+    background-color: #363136;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+  `;
+
   const [meetings, setMeetings] = useState([]);
   const [updateActive, setUpdateActive] = useState(false);
   const [meetingToUpdate, setMeetingToUpdate] = useState({});
@@ -51,32 +60,34 @@ const MeetingMain = (props) => {
   }, []);
 
   return (
-    <Container style={tableStyle}>
-      <Row>
-        <Col md="12">
-          <MeetingCreate fetchMeetings={fetchMeetings} token={props.token} />
-        </Col>
-        <Col md="12">
-          <MeetingTable
-            meetings={meetings}
-            editUpdateMeeting={editUpdateMeeting}
-            updateOn={updateOn}
-            fetchMeetings={fetchMeetings}
-            token={props.token}
-          />
-        </Col>
-        {updateActive ? (
-          <MeetingEdit
-            meetingToUpdate={meetingToUpdate}
-            updateOff={updateOff}
-            token={props.token}
-            fetchMeetings={fetchMeetings}
-          />
-        ) : (
-          <></>
-        )}
-      </Row>
-    </Container>
+    <Div>
+      <Container style={tableStyle}>
+        <Row>
+          <Col md="12">
+            <MeetingCreate fetchMeetings={fetchMeetings} token={props.token} />
+          </Col>
+          <Col md="12">
+            <MeetingTable
+              meetings={meetings}
+              editUpdateMeeting={editUpdateMeeting}
+              updateOn={updateOn}
+              fetchMeetings={fetchMeetings}
+              token={props.token}
+            />
+          </Col>
+          {updateActive ? (
+            <MeetingEdit
+              meetingToUpdate={meetingToUpdate}
+              updateOff={updateOff}
+              token={props.token}
+              fetchMeetings={fetchMeetings}
+            />
+          ) : (
+            <></>
+          )}
+        </Row>
+      </Container>
+    </Div>
   );
 };
 

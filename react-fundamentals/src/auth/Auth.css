@@ -5,18 +5,17 @@ form {
   align-items: center;
 }
 
-/* .authForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: lightcoral;
-} */
-
 .logo {
-  padding-left: 20px;
   margin-top: 25px;
-  /* padding-left: 100px; */
   font-family: "Ubuntu", sans-serif;
-  padding-bottom: 80px;
+  font-size: 3rem;
+  padding-bottom: 110px;
+  margin-top: 25px;
+  max-width: 35vw;
+}
+
+.authForm {
+  float: right;
+  margin-right: 20vw;
+  margin-top: -100px;
 }

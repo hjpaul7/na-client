@@ -29,19 +29,19 @@ const MeetingCreate = (props) => {
     maxWidth: "200px",
   };
 
-  const Div = styled.div`
-    background-color: #363136;
-    opacity: 0.8;
-    font-size: 14px;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    // width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  `;
+  // const Div = styled.div`
+  //   background-color: #363136;
+  //   opacity: 0.8;
+  //   font-size: 14px;
+  //   color: white;
+  //   padding: 10px;
+  //   border-radius: 5px;
+  //   // width: 100%;
+  //   margin-bottom: 20px;
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  // `;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -73,22 +73,20 @@ const MeetingCreate = (props) => {
 
   return (
     <Container>
-      <Div>
-        <p>
-          {" "}
-          If a new <b>NA</b> meeting has been started in Indianapolis, feel free
-          to add it below to help fellow Hoosiers into recovery. Please fill out
-          all the fields.
-        </p>
-      </Div>
-      <Div>
-        <b>What does Open or Closed mean?</b>
-        <li>
-          An Open meeting allows non addicts to come to the meetings as well,
-          for support or to learn about the program. A Closed meeting is only
-          for addicts or recovering addicts
-        </li>
-      </Div>
+      <p>
+        {" "}
+        If a new <b>NA</b> meeting has been started in Indianapolis, feel free
+        to add it below to help fellow Hoosiers into recovery. Please fill out
+        all the fields.
+      </p>
+      <hr />
+      <b>What does Open or Closed mean?</b>
+      <li>
+        An Open meeting allows non addicts to come to the meetings as well, for
+        support or to learn about the program. A Closed meeting is only for
+        addicts or recovering addicts
+      </li>
+      <hr />
       <h2
         style={{
           textAlign: "center",
