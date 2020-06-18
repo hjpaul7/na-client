@@ -9,10 +9,8 @@ import {
   Row,
   Col,
   Fade,
-  Badge,
 } from "reactstrap";
 import APIURL from "../helpers/environment";
-import styled from "styled-components";
 
 const MeetingCreate = (props) => {
   const [name, setName] = useState("");
@@ -25,9 +23,9 @@ const MeetingCreate = (props) => {
 
   const toggleButton = () => setFadeOut(!fadeOut);
 
-  const inputStyle = {
-    maxWidth: "200px",
-  };
+  // const inputStyle = {
+  //   maxWidth: "200px",
+  // };
 
   // const Div = styled.div`
   //   background-color: #363136;
@@ -105,6 +103,7 @@ const MeetingCreate = (props) => {
               <Input
                 name="name"
                 value={name}
+                required
                 onChange={(e) => setName(e.target.value)}
               />
             </FormGroup>
@@ -116,6 +115,7 @@ const MeetingCreate = (props) => {
               <Input
                 name="location"
                 value={location}
+                required
                 onChange={(e) => setLocation(e.target.value)}
               />
             </FormGroup>
@@ -127,6 +127,7 @@ const MeetingCreate = (props) => {
               <Input
                 name="day"
                 value={day}
+                required
                 onChange={(e) => setDay(e.target.value)}
               />
             </FormGroup>
@@ -139,6 +140,7 @@ const MeetingCreate = (props) => {
               <Input
                 name="time"
                 value={time}
+                required
                 onChange={(e) => setTime(e.target.value)}
               />
             </FormGroup>
@@ -150,6 +152,7 @@ const MeetingCreate = (props) => {
               <Input
                 name="openclosed"
                 value={openclosed}
+                required
                 onChange={(e) => setOpenClosed(e.target.value)}
               />
             </FormGroup>

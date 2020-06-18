@@ -4,7 +4,6 @@ import Alert from "@material-ui/lab/Alert";
 
 import IconButton from "@material-ui/core/IconButton";
 import Collapse from "@material-ui/core/Collapse";
-import Button from "@material-ui/core/Button";
 import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles((theme) => ({
@@ -19,10 +18,6 @@ const useStyles = makeStyles((theme) => ({
 const CovidAlert = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
-
-  const aStyle = {
-    color: "red",
-  };
 
   return (
     <div className={classes.root}>

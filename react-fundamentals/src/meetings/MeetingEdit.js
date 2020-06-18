@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import {
-  Button,
   Form,
   FormGroup,
   Label,
@@ -11,6 +10,7 @@ import {
   ModalBody,
 } from "reactstrap";
 import APIURL from "../helpers/environment";
+import { Button } from "@material-ui/core";
 
 const MeetingEdit = (props) => {
   const [editName, setEditName] = useState(props.meetingToUpdate.name);
@@ -25,6 +25,7 @@ const MeetingEdit = (props) => {
 
   const updateStyle = {
     color: "black",
+    backgroundColor: "#363136",
   };
 
   const meetingUpdate = (event, meeting) => {
@@ -53,6 +54,7 @@ const MeetingEdit = (props) => {
     <>
       <Modal isOpen={true} style={updateStyle}>
         <ModalHeader>Log a Meeting</ModalHeader>
+        <hr />
         <ModalBody>
           <Form onSubmit={meetingUpdate}>
             <FormGroup>
@@ -96,7 +98,9 @@ const MeetingEdit = (props) => {
               ></Input>
             </FormGroup>
 
-            <Button type="submit">Edit the meeting</Button>
+            <Button type="submit" variant="contained" color="primary">
+              Confirm
+            </Button>
           </Form>
         </ModalBody>
       </Modal>

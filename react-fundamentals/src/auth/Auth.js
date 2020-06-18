@@ -42,11 +42,11 @@ const Div = styled.div`
   margin-left: 125px;
 `;
 
-const useStyles = makeStyles((theme) => ({
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   submit: {
+//     margin: theme.spacing(3, 0, 2),
+//   },
+// }));
 
 const Auth = (props) => {
   const [username, setUsername] = useState("");

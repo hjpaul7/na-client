@@ -8,7 +8,6 @@ import MeetingMain from "./meetings/MeetingMain";
 import Sidebar from "./components/site/Sidebar";
 import { BrowserRouter as Router } from "react-router-dom";
 import CovidAlert from "./home/CovidAlert";
-import MeetingCreate from "./meetings/MeetingCreate";
 
 function App() {
   const [sessionToken, setSessionToken] = useState("");
