@@ -39,7 +39,7 @@ const Div = styled.div`
   padding-top: 10px;
   padding-bottom: 5px;
   width: 310px;
-  margin-left: 125px;
+  margin-left: 25px;
 `;
 
 // const useStyles = makeStyles((theme) => ({

@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white !important;
-  background-color: lightgray !important;
+  /* background-color: lightgray !important; */
+  background: url("https://images.hdqwalls.com/download/skye-united-kingdom-8k-yh-3840x2160.jpg") !important;
 }
 
 code {
