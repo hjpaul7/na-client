@@ -6,12 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white !important;
-  /* background: linear-gradient(to bottom, #ff5050, #f08080); */
-  /* background: linear-gradient(to bottom, #fab18d, coral); */
-  /* background-color: coral !important; */
-  /* background-image: ("https://i.imgur.com/pQgNNxf.jpg") !important; */
-  /* background-color: #1f1f23 !important; */
-  background-image: url("./assets/background-test(2).jfif") !important;
+  background-color: lightgray !important;
 }
 
 code {
